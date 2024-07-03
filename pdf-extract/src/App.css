@@ -1,0 +1,144 @@
+.App {
+  text-align: center;
+  max-width: 1200px; /* Adjust the maximum width as per your layout */
+  margin: auto;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+input[type="file"] {
+  margin: 10px 0;
+}
+
+button {
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button.primary-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+button.submit-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+button.secondary-btn {
+  background-color: #ffc107;
+  color: black;
+}
+
+textarea {
+  width: 80%;
+  margin: 10px 0;
+}
+
+.MainContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.PDFPreview {
+  border: 1px solid #ccc;
+  width: 600px; /* Adjust the width of the PDF preview */
+  height: 800px; /* Adjust the height of the PDF preview */
+}
+
+.ExtractedInfo {
+  margin-left: 20px;
+}
+
+.ExtractedInfo h2 {
+  margin-bottom: 10px;
+}
+
+.ExtractedInfo label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.ExtractedInfo input {
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 200px;
+}
+
+.ExtractedInfo div {
+  margin-bottom: 10px;
+}
+
+.Spacing {
+  margin: 20px;
+}
+
+.Loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #007bff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
